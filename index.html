@@ -31,6 +31,18 @@
         margin: 0;
     }
 
+    header ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    header ul li {
+        display: inline; /* Cambia a "inline-block" si quieres que tengan un ancho fijo */
+      margin-right: 10px; /* Espaciado entre los elementos de lista */
+    }
+
+    
     /* Estilos para la barra de navegación */
     nav {
         background-color: #ff8000;
@@ -70,7 +82,7 @@
     ul {
         list-style: disc;
         margin-left: 20px;
-    }
+    }   
 
     /* Estilos para los pies de página */
     footer {
@@ -80,12 +92,36 @@
         color: white;
     }
 
+    /* Estilos para los enlaces de redes sociales */
+    .redes-sociales {
+        list-style: none;
+        padding: 0;
+    }
+
+    .redes-sociales li {
+        margin-bottom: 10px;
+    }
+
+    .redes-sociales a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    .redes-sociales a:hover {
+        color: #007bff;
+    }
 </style>
 <body>
     <header>
         <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Imagen de cabecera">
         <h1>Joaquin Gamarra</h1>
         <p>Programador Web</p>
+        <ul  class="redes-sociales">
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+            <li><a href="https://www.instagram.com/joaquincyb/">Instagram</a></li>
+            <!-- Agregar más enlaces a redes sociales aquí -->
+        </ul>
     </header>
     <nav>
         <ul>
@@ -116,7 +152,7 @@
         </section>
         <section id="contacto">
             <h2>Contacto</h2>
-            <p>Puedes contactarme en [correo electrónico] o a través de mis redes sociales.</p>
+            <p>Puedes contactarme en [correo electrónico] o a través de mis redes sociales:</p>
         </section>
     </main>
     <footer>
